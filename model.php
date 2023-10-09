@@ -2,7 +2,7 @@
 // **************************
 // 社員コードで存在チェック
 // **************************
-function check( $mysqli ) {
+function check( $sqlite ) {
 
     $query = "select * from 社員マスタ where 社員コード = :scode";
 
@@ -29,7 +29,7 @@ function check( $mysqli ) {
 // **************************
 // 更新処理
 // **************************
-function insert( $mysqli ) {
+function insert( $sqlite ) {
 
     $query = <<<QUERY
 
