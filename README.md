@@ -31,7 +31,7 @@ if ( $_POST["btn"] == "更新" ) {
 ```
 
 ✅ model.php
-```
+```php
     $query = <<<QUERY
 
 insert into 社員マスタ
