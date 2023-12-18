@@ -26,4 +26,5 @@ if ( $_POST["btn"] == "更新" ) {
     $_POST["teate"] = "";
     $_POST["kanri"] = "";
     $_POST["birth"] = "";
-}```
+}
+```
