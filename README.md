@@ -4,6 +4,7 @@
 
 ## 新規登録を追加
 
+✅ syain.php
 ```php
 if ( $_POST["btn"] == "更新" ) {
 
@@ -27,4 +28,31 @@ if ( $_POST["btn"] == "更新" ) {
     $_POST["kanri"] = "";
     $_POST["birth"] = "";
 }
+```
+
+✅ model.php
+```
+    $query = <<<QUERY
+
+insert into 社員マスタ
+    (社員コード
+    ,氏名
+    ,フリガナ
+    ,所属
+    ,性別
+    ,給与
+    ,手当
+    ,管理者
+    ,生年月日
+    )
+    values( :scode
+    ,:sname
+    ,:fname
+    ,:syozoku
+    ,:seibetsu
+    ,:kyuyo
+    ,:teate
+    ,:kanri
+    ,:birth
+    )
 ```
